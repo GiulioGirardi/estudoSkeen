@@ -1,0 +1,29 @@
+Node0 [127.0.0.1:11000] Skeen - Start listening ... Ini TS: 0 
+Channel to node 0 : [id: 0xde833bc8, L:/127.0.0.1:55888 - R:/127.0.0.1:11000] 
+Channel to node 5 : [id: 0xcce29938, L:/127.0.0.1:55884 - R:/127.0.0.1:11025] 
+Channel to node 2 : [id: 0x835e0318, L:/127.0.0.1:55887 - R:/127.0.0.1:11010] 
+Channel to node 4 : [id: 0x731f7de4, L:/127.0.0.1:55885 - R:/127.0.0.1:11020] 
+Channel to node 3 : [id: 0xfe7195a1, L:/127.0.0.1:55886 - R:/127.0.0.1:11015] 
+Channel to node 1 : [id: 0xc49c150e, L:/127.0.0.1:55895 - R:/127.0.0.1:11005] 
+Channel to client 2 : [id: 0xbcb6d2b7, L:/127.0.0.1:11000 - R:/127.0.0.1:55908] 
+Channel to client 1 : [id: 0xb318a8ab, L:/127.0.0.1:11000 - R:/127.0.0.1:55916] 
+Channel to client 4 : [id: 0x1a31c5ff, L:/127.0.0.1:11000 - R:/127.0.0.1:55910] 
+Channel to client 0 : [id: 0x55bdf310, L:/127.0.0.1:11000 - R:/127.0.0.1:55899] 
+Channel to client 5 : [id: 0xb4042136, L:/127.0.0.1:11000 - R:/127.0.0.1:55922] 
+Channel to client 6 : [id: 0x7ca4726f, L:/127.0.0.1:11000 - R:/127.0.0.1:55937] 
+Channel to client 8 : [id: 0x98ad3958, L:/127.0.0.1:11000 - R:/127.0.0.1:55943] 
+Channel to client 3 : [id: 0x9b91ab84, L:/127.0.0.1:11000 - R:/127.0.0.1:55948] 
+Channel to client 10 : [id: 0x37c6d4f1, L:/127.0.0.1:11000 - R:/127.0.0.1:55953] 
+Channel to client 9 : [id: 0xf14462dc, L:/127.0.0.1:11000 - R:/127.0.0.1:55962] 
+Channel to client 7 : [id: 0x6bc9d005, L:/127.0.0.1:11000 - R:/127.0.0.1:55976] 
+Channel to client 11 : [id: 0x35014e1f, L:/127.0.0.1:11000 - R:/127.0.0.1:55980] 
+All 12  clients are ready. They will start multicasting... 
+All 12  clients done! 
+Queue is empty ! =] 
+------------------------------------- 
+Total msgs in the history: 88 
+Total local msgs received: 275 
+Total step1 received: 88 
+Total step2 received: 177 
+------------------------------------- 
+Node 0 is finished 

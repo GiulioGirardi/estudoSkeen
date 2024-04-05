@@ -1,0 +1,28 @@
+Node5 [127.0.0.1:11025] Skeen - Start listening ... Ini TS: 5 
+Channel to node 5 : [id: 0xa04bbd49, L:/127.0.0.1:55865 - R:/127.0.0.1:11025] 
+Channel to node 1 : [id: 0x502e3bf2, L:/127.0.0.1:55896 - R:/127.0.0.1:11005] 
+Channel to node 2 : [id: 0x14754273, L:/127.0.0.1:55897 - R:/127.0.0.1:11010] 
+Channel to node 4 : [id: 0xa8c650bd, L:/127.0.0.1:55900 - R:/127.0.0.1:11020] 
+Channel to node 0 : [id: 0x1e18067d, L:/127.0.0.1:55904 - R:/127.0.0.1:11000] 
+Channel to node 3 : [id: 0x22863f0d, L:/127.0.0.1:55902 - R:/127.0.0.1:11015] 
+Channel to client 4 : [id: 0xbd9f6d8e, L:/127.0.0.1:11025 - R:/127.0.0.1:55912] 
+Channel to client 1 : [id: 0x9c5ce142, L:/127.0.0.1:11025 - R:/127.0.0.1:55919] 
+Channel to client 2 : [id: 0x9bdb050b, L:/127.0.0.1:11025 - R:/127.0.0.1:55906] 
+Channel to client 0 : [id: 0x3d824dff, L:/127.0.0.1:11025 - R:/127.0.0.1:55901] 
+Channel to client 5 : [id: 0x5b323b4b, L:/127.0.0.1:11025 - R:/127.0.0.1:55923] 
+Channel to client 6 : [id: 0x279ae6fd, L:/127.0.0.1:11025 - R:/127.0.0.1:55940] 
+Channel to client 3 : [id: 0x1d7b02b9, L:/127.0.0.1:11025 - R:/127.0.0.1:55950] 
+Channel to client 8 : [id: 0x5ae13bf4, L:/127.0.0.1:11025 - R:/127.0.0.1:55946] 
+Channel to client 10 : [id: 0x310b64a8, L:/127.0.0.1:11025 - R:/127.0.0.1:55954] 
+Channel to client 9 : [id: 0x3dc77796, L:/127.0.0.1:11025 - R:/127.0.0.1:55964] 
+Channel to client 7 : [id: 0x68989daa, L:/127.0.0.1:11025 - R:/127.0.0.1:55973] 
+Channel to client 11 : [id: 0x73d67697, L:/127.0.0.1:11025 - R:/127.0.0.1:55981] 
+All 12  clients done! 
+Queue is empty ! =] 
+------------------------------------- 
+Total msgs in the history: 71 
+Total local msgs received: 346 
+Total step1 received: 71 
+Total step2 received: 144 
+------------------------------------- 
+Node 5 is finished 
