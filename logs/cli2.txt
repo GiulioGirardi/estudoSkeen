@@ -1,10 +1,10 @@
 SKEEN TPCC Client 
-Channel to node 0 : [id: 0x527f2106, L:/127.0.0.1:55908 - R:/127.0.0.1:11000] 
-Channel to node 5 : [id: 0xa9b3bb71, L:/127.0.0.1:55906 - R:/127.0.0.1:11025] 
-Channel to node 1 : [id: 0xea7615e6, L:/127.0.0.1:55905 - R:/127.0.0.1:11005] 
-Channel to node 4 : [id: 0xfc0cb0c9, L:/127.0.0.1:55907 - R:/127.0.0.1:11020] 
-Channel to node 3 : [id: 0x425eea3d, L:/127.0.0.1:55914 - R:/127.0.0.1:11015] 
-Channel to node 2 : [id: 0xd0de8eba, L:/127.0.0.1:55926 - R:/127.0.0.1:11010] 
+Channel to node 4 : [id: 0x2f8109ef, L:/127.0.0.1:56629 - R:/127.0.0.1:11020] 
+Channel to node 1 : [id: 0x49fd46ba, L:/127.0.0.1:56625 - R:/127.0.0.1:11005] 
+Channel to node 5 : [id: 0x892ec8cc, L:/127.0.0.1:56626 - R:/127.0.0.1:11025] 
+Channel to node 2 : [id: 0xbf9ef671, L:/127.0.0.1:56628 - R:/127.0.0.1:11010] 
+Channel to node 0 : [id: 0x08f274f1, L:/127.0.0.1:56627 - R:/127.0.0.1:11000] 
+Channel to node 3 : [id: 0xc0d96e06, L:/127.0.0.1:56636 - R:/127.0.0.1:11015] 
 Init OK - Server 0 
 Init OK - Server 1 
 Init OK - Server 2 
@@ -17,16 +17,16 @@ Started SKEEN tpcc experiment. Num nodes: 6
 My home warehouse: 2 
 Locality: 80 % 
 Start tp measurements
-Tp at sec 0: 119
-Finished SKEEN tpcc experiment. Elapsed:  1.0259655 seconds 
+Tp at sec 0: 163
+Finished SKEEN tpcc experiment. Elapsed:  1.0088706 seconds 
 LOCAL STATS: 
 --------------
 Stats:
-	Total: 120
-	Mean: 8549.275
-	StdDev: 17552.184637884675
-	Max: 126604
-	Percentile (25, 50, 75, 95, 99): (2290, 3560, 6330, 34006, 126604)
+	Total: 164
+	Mean: 6151.170731707317
+	StdDev: 15911.124877082297
+	Max: 164100
+	Percentile (25, 50, 75, 95, 99): (1536, 2077, 3536, 38761, 54883)
 --------------
 
  
@@ -37,24 +37,24 @@ End OK - Server 3
 End OK - Server 4 
 End OK - Server 5 
 
-Ratio of NewOrder Txs: 45.83333333333333%
-Ratio of Payment Txs: 41.66666666666667%
-Ratio of OrderStatus Txs: 3.3333333333333335%
-Ratio of Delivery Txs: 5.833333333333333%
-Ratio of StockLevel Txs: 3.3333333333333335%
+Ratio of NewOrder Txs: 47.5609756097561%
+Ratio of Payment Txs: 40.243902439024396%
+Ratio of OrderStatus Txs: 1.8292682926829267%
+Ratio of Delivery Txs: 3.6585365853658534%
+Ratio of StockLevel Txs: 6.707317073170732%
 
-Multi-partition Txs: 15.0
-# of partitions accessed (multi-partition Txs): 30.0
-# of partitions accessed (all Txs): 135.0
+Multi-partition Txs: 21.0
+# of partitions accessed (multi-partition Txs): 42.0
+# of partitions accessed (all Txs): 185.0
 
-Ratio of multi-partition Txs: 12.5%
+Ratio of multi-partition Txs: 12.804878048780488%
 Average # of partitions accessed (in multi-partition Txs): 2.0
-Average # of partitions accessed (in all Txs): 1.125
+Average # of partitions accessed (in all Txs): 1.1280487804878048
 
-Average # of items accessed in NewOrder Txs: 10.127272727272727
+Average # of items accessed in NewOrder Txs: 9.333333333333334
 
-# of Txs that targets 1 WH: 105
-# of Txs that targets 2 WH: 15 (New Order: 7, Payment: 8)
+# of Txs that targets 1 WH: 143
+# of Txs that targets 2 WH: 21 (New Order: 7, Payment: 14)
 # of Txs that targets 3 WH: 0
 # of Txs that targets 4 WH: 0
 # of Txs that targets 5 WH: 0
@@ -65,9 +65,8 @@ Average # of items accessed in NewOrder Txs: 10.127272727272727
 # of Txs that targets 10 WH: 0
 
 Wload for destination size 2: 
-# of msgs to [ 0 2 ]: 4 
-# of msgs to [ 1 2 ]: 1 
-# of msgs to [ 2 3 ]: 10 
+# of msgs to [ 0 2 ]: 5 
+# of msgs to [ 2 3 ]: 16 
 Wload for destination size 3: 
 Wload for destination size 4: 
 Wload for destination size 5: 

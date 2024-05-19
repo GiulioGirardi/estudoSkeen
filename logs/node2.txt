@@ -1,28 +1,28 @@
 Node2 [127.0.0.1:11010] Skeen - Start listening ... Ini TS: 2 
-Channel to node 2 : [id: 0x71b98312, L:/127.0.0.1:55881 - R:/127.0.0.1:11010] 
-Channel to node 3 : [id: 0x7176b26f, L:/127.0.0.1:55879 - R:/127.0.0.1:11015] 
-Channel to node 4 : [id: 0x0e236133, L:/127.0.0.1:55880 - R:/127.0.0.1:11020] 
-Channel to node 5 : [id: 0x1c2d98ee, L:/127.0.0.1:55882 - R:/127.0.0.1:11025] 
-Channel to client 1 : [id: 0x5952180b, L:/127.0.0.1:11010 - R:/127.0.0.1:55928] 
-Channel to client 4 : [id: 0x1aca3058, L:/127.0.0.1:11010 - R:/127.0.0.1:55930] 
-Channel to client 2 : [id: 0xde60b573, L:/127.0.0.1:11010 - R:/127.0.0.1:55926] 
-Channel to client 0 : [id: 0x3574a4c2, L:/127.0.0.1:11010 - R:/127.0.0.1:55941] 
-Channel to node 1 : [id: 0xf47fa7f2, L:/127.0.0.1:55951 - R:/127.0.0.1:11005] 
-Channel to node 0 : [id: 0x1298b043, L:/127.0.0.1:55958 - R:/127.0.0.1:11000] 
-Channel to client 5 : [id: 0x123560bb, L:/127.0.0.1:11010 - R:/127.0.0.1:55956] 
-Channel to client 6 : [id: 0xb56544fc, L:/127.0.0.1:11010 - R:/127.0.0.1:55960] 
-Channel to client 3 : [id: 0xcb416833, L:/127.0.0.1:11010 - R:/127.0.0.1:55957] 
-Channel to client 8 : [id: 0xf8580e5e, L:/127.0.0.1:11010 - R:/127.0.0.1:55959] 
-Channel to client 10 : [id: 0xfbdbcc04, L:/127.0.0.1:11010 - R:/127.0.0.1:55952] 
-Channel to client 9 : [id: 0x95ea41cb, L:/127.0.0.1:11010 - R:/127.0.0.1:55965] 
-Channel to client 7 : [id: 0x60e4d8fd, L:/127.0.0.1:11010 - R:/127.0.0.1:55977] 
-Channel to client 11 : [id: 0xc9a4e758, L:/127.0.0.1:11010 - R:/127.0.0.1:55979] 
+Channel to node 5 : [id: 0x5f25c224, L:/127.0.0.1:56592 - R:/127.0.0.1:11025] 
+Channel to node 2 : [id: 0x6d186447, L:/127.0.0.1:56594 - R:/127.0.0.1:11010] 
+Channel to node 4 : [id: 0x96b101ce, L:/127.0.0.1:56590 - R:/127.0.0.1:11020] 
+Channel to node 3 : [id: 0xff069dca, L:/127.0.0.1:56593 - R:/127.0.0.1:11015] 
+Channel to client 0 : [id: 0x3b6c4050, L:/127.0.0.1:11010 - R:/127.0.0.1:56608] 
+Channel to client 1 : [id: 0x65d58563, L:/127.0.0.1:11010 - R:/127.0.0.1:56614] 
+Channel to client 2 : [id: 0x521b077d, L:/127.0.0.1:11010 - R:/127.0.0.1:56628] 
+Channel to node 0 : [id: 0x0e8b3a6d, L:/127.0.0.1:56644 - R:/127.0.0.1:11000] 
+Channel to node 1 : [id: 0x729ae380, L:/127.0.0.1:56646 - R:/127.0.0.1:11005] 
+Channel to client 6 : [id: 0x83726c33, L:/127.0.0.1:11010 - R:/127.0.0.1:56642] 
+Channel to client 3 : [id: 0xe3dfb9f6, L:/127.0.0.1:11010 - R:/127.0.0.1:56650] 
+Channel to client 5 : [id: 0x3c44c90a, L:/127.0.0.1:11010 - R:/127.0.0.1:56659] 
+Channel to client 4 : [id: 0x6f5d1644, L:/127.0.0.1:11010 - R:/127.0.0.1:56664] 
+Channel to client 8 : [id: 0xdef5eed4, L:/127.0.0.1:11010 - R:/127.0.0.1:56671] 
+Channel to client 7 : [id: 0x2f732ab9, L:/127.0.0.1:11010 - R:/127.0.0.1:56672] 
+Channel to client 9 : [id: 0x79f4f5f3, L:/127.0.0.1:11010 - R:/127.0.0.1:56683] 
+Channel to client 10 : [id: 0x1aa48b3c, L:/127.0.0.1:11010 - R:/127.0.0.1:56695] 
+Channel to client 11 : [id: 0xf1c82152, L:/127.0.0.1:11010 - R:/127.0.0.1:56694] 
 All 12  clients done! 
 Queue is empty ! =] 
 ------------------------------------- 
-Total msgs in the history: 81 
-Total local msgs received: 230 
-Total step1 received: 81 
-Total step2 received: 164 
+Total msgs in the history: 85 
+Total local msgs received: 337 
+Total step1 received: 85 
+Total step2 received: 171 
 ------------------------------------- 
 Node 2 is finished 
