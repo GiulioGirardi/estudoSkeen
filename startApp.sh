@@ -17,8 +17,9 @@ for ((i = START; i >= 0; i-=1)) ; do
     SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
     LOG_FILE="$LOGS_DIR/a.$ID"
     COMMAND="screen -d -m -L -Logfile $LOG_FILE -S a$ID.node0"
-    COMMAND+=" $SSH_COMMAND $HOST_TARGET" 
-
+    COMMAND+=" $SSH_COMMAND $HOST_TARGET bin/*;lib/*  MainServer -i $i -d $duration -c $numCli " 
+# screen -d -m -L -LogFile <nome_arq_log> -S a<ID>.<ENDEREÇO>
+#  ssh -o StrictHostKeyChecking=no <endereço_maquina_alvo> <binário com todas as flags>
     java -cp "bin/*;lib/*" MainServer -i $i -d $duration -c $numCli >> logs/node$i.txt & sleep .05
 
 # Run the command
