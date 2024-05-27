@@ -31,10 +31,6 @@ for ((i = START; i >= 0; i-=1)) ; do
 done
 # echo started $numServer servers >> logs/executions.log
 
-
-
-
-
 # Start clients
 java -cp "bin/*;lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/cli0.txt &
 java -cp "bin/*;lib/*" MainClient -c $numCli -i 1  -d $duration -t -l $locality -w 1 >> logs/cli1.txt &
