@@ -1,5 +1,5 @@
-numCli=12
-numServer=6
+numCli=1
+numServer=1
 duration=1
 locality=80
 #rm -f -r logs/*  files/*; kill -l "java.*Main*"; ant clean; ant;
@@ -9,17 +9,17 @@ HOST_MAIN="node0"
 echo $HOST_MAIN
 
 #Monta comando SSH
-SSH_COMMAND=" ssh -o StrictHostKeyChecking=no"
+SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
 
-COMMAND_1="screen -d -m -L -Logfile $LOG_FILE -S a0.$HOST_MAIN"
-COMMAND_1+="$SSH_COMMAND "node1" java -cp "bin/*:lib/*" MainServer -i 2 -d $duration -c $numCli"
-echo  COMMAND_1
+COMMAND="screen -d -m -L -Logfile $LOG_FILE -S node0"
+COMMAND+=" $SSH_COMMAND node1" java -cp "bin/*:lib/*" MainServer -i 1 -d $duration -c $numCli
+echo $COMMAND
 
-COMMAND_2="screen -d -m -L -Logfile $LOG_FILE -S a0.$HOST_MAIN"
-COMMAND_2+="$SSH_COMMAND "node1" java -cp "bin/*:lib/*" MainClient -c $numCli -i 1  -d $duration -t -l $locality -w 1"
-echo  COMMAND_2
+#COMMAN="screen -d -m -L -Logfile $LOG_FILE -S a0.node0"
+#COMMAN+=" $SSH_COMMAND node1" java -cp "bin/*:lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/teste.txt &
+#echo $COMMAN
 # Start clients
-#java -cp "bin/*:lib/*" MainClient -c $numCli -i 1  -d $duration -t -l $locality -w 1 >> logs/cli0.txt &
+java -cp "bin/*:lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/cli0.txt &
 #java -cp "bin/*:lib/*" MainClient -c $numCli -i 2  -d $duration -t -l $locality -w 2 >> logs/cli1.txt &
 
 echo started $numCli clients >> logs/executions.log
