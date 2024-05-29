@@ -15,9 +15,9 @@ USERNAME="root"
 #SCRIPT=$(java -cp "bin/*:lib/*" MainServer -i 1 -d $duration -c $numCli >> logs/node1.txt & sleep .05)
 #ssh -o UserKnownHostsFile=/dev/null -l ${USERNAME} ${HOSTS} "${SCRIPT}"
 
-((START = "${numServer}"-1))
-for ((i = START; i >= 0; i-=1)) ; do
-    ssh -o UserKnownHostsFile=/dev/null -l ${USERNAME} "node.${i}" "$(java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" >> logs/node$i.txt & sleep .05)"
+((START = "${numServer}"))
+for ((i = START; i > 0; i-=1)) ; do
+    ssh -o UserKnownHostsFile=/dev/null -l ${USERNAME} "node${i}" "$(java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" >> logs/node$i.txt & sleep .05)"
 done
 
 echo started $numServer servers >> logs/servers.log
