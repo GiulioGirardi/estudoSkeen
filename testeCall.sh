@@ -11,16 +11,14 @@ locality=80
 #echo $COMMAND
 
 USERNAME="root"
-HOSTS="10.10.1.2"
-SCRIPT=$(java -cp "bin/*:lib/*" MainServer -i 1 -d $duration -c $numCli >> logs/node$i.txt & sleep .05)
-for HOSTNAME in ${HOSTS} ; do
-    ssh -l ${USERNAME} ${HOSTNAME} "${SCRIPT}"
-done
+HOSTS="node1"
+SCRIPT=$(java -cp "bin/*:lib/*" MainServer -i 1 -d $duration -c $numCli >> logs/node1.txt & sleep .05)
+ssh -o UserKnownHostsFile=/dev/null -l ${USERNAME} ${HOSTS} "${SCRIPT}"
 
-SCRIPT_2=$(java -cp "bin/*:lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/cli0.txt &)
-for HOSTNAME in ${HOSTS} ; do
-    ssh -l ${USERNAME} ${HOSTNAME} "${SCRIPT_2}"
-done
+#SCRIPT_2=$(java -cp "bin/*:lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/cli0.txt &)
+#for HOSTNAME in ${HOSTS} ; do
+#    ssh -l ${USERNAME} ${HOSTNAME} "${SCRIPT_2}"
+#done
 
 #numCli=12
 #numServer=6
