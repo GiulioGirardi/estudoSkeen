@@ -7,7 +7,7 @@ USERNAME="root"
 
 ((START = "${numServer}"))
 for ((i = START; i > 0; i-=1)) ; do
-    sudo ssh -l ${USERNAME} "node${i}" "$(java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" >> logs/node"${i}".txt & sleep .05)"
+    sudo ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -l ${USERNAME} "node${i}" "$(sudo java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" >> logs/node"${i}".txt & sleep .05 &)"
 done
 
 while :
