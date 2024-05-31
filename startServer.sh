@@ -1,13 +1,18 @@
 #!/bin/bash
 numCli=2
 numServer=2
-duration=1
+duration=5
 
 USERNAME="root"
-
-((START = "${numServer}"))
-for ((i = START; i > 0; i-=1)) ; do
-    sudo ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -l ${USERNAME} "node${i}" "$(sudo java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" >> logs/node"${i}".txt & sleep .05 &)"
+#>> logs/node{i}.txt & sleep .05 &)
+((START=$numServer))
+for ((i=START; i>0; i-=1)) ; do
+        SCRIPT=$(sudo java -cp "bin/*:lib/*" MainServer -i ${i} -d $duration -c ${numCli})
+        #sudo ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "root@node1" ${SCRIPT}
+        sudo ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "root@node${i}" "${SCRIPT}"
+#$(sudo java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" sleep .05 &)"
+        echo "passo aqui!"
+        #sudo ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l ${USERNAME} "node${i}" "$(sudo java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c "${numCli}" sleep .05 &)"
 done
 
 while :
