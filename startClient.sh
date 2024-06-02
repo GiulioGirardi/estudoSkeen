@@ -1,6 +1,6 @@
 #!/bin/bash
 numCli=2
-duration=1
+duration=120
 locality=80
 
 USERNAME="root"

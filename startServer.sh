@@ -1,7 +1,7 @@
 #!/bin/bash
 numCli=2
 numServer=2
-duration=5
+duration=120
 
 USERNAME="root"
 #>> logs/node{i}.txt & sleep .05 &)
