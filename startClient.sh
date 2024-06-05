@@ -10,5 +10,5 @@ SCRIPT=$(java -cp "bin/*:lib/*" MainClient -c "${numCli}" -i 0  -d "${duration}"
 
 ((START = "${numCli}"))
 for ((i = START; i > 0; i-=1)) ; do
-    sudo ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -l ${USERNAME} "node${i}" "${SCRIPT}"
+    sudo ssh -o StrictHostKeyChecking=no ${USERNAME} "node${i}" "${SCRIPT}"
 done
