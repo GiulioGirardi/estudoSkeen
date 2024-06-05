@@ -2,7 +2,7 @@ numCli=12
 numServer=6
 duration=$1
 locality=80
-#rm -f -r logs/*  files/*; pkill -f 'java.*Main*'; ant clean; ant;
+rm -f -r logs/*  files/*; pkill -f 'java.*Main*'; ant clean; ant;
 
 # Start servers
 ((START = $numServer-1))
