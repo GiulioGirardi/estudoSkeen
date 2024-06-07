@@ -7,14 +7,14 @@ rm -f -r logs/*  files/*; pkill -f 'java.*Main*'; ant clean; ant;
 # Start servers
 ((START = "${numServer}"-1))
 for ((i = START; i >= 0; i-=1)) ; do
-  sudo ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "root@node${i}" "$(java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c $numCli >> logs/node"${i}".txt & sleep .05)"
+  sudo ssh -o StrictHostKeyChecking=no "root@node${i}" "$(java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c $numCli >> logs/node"${i}".txt & sleep .05)"
 done
 echo started $numServer servers >> logs/executions.log
 
 # Start clients
-java -cp "bin/*:lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/cli0.txt &
-java -cp "bin/*:lib/*" MainClient -c $numCli -i 1  -d $duration -t -l $locality -w 1 >> logs/cli1.txt &
-java -cp "bin/*:lib/*" MainClient -c $numCli -i 2  -d $duration -t -l $locality -w 2 >> logs/cli2.txt &
+sudo java -cp "bin/*:lib/*" MainClient -c $numCli -i 0  -d $duration -t -l $locality -w 0 >> logs/cli0.txt &
+sudo java -cp "bin/*:lib/*" MainClient -c $numCli -i 1  -d $duration -t -l $locality -w 1 >> logs/cli1.txt &
+sudo java -cp "bin/*:lib/*" MainClient -c $numCli -i 2  -d $duration -t -l $locality -w 2 >> logs/cli2.txt &
 #java -cp "bin/*:lib/*" MainClient -c $numCli -i 3  -d $duration -t -l $locality -w 3 >> logs/cli3.txt &
 #java -cp "bin/*:lib/*" MainClient -c $numCli -i 4  -d $duration -t -l $locality -w 4 >> logs/cli4.txt &
 #java -cp "bin/*:lib/*" MainClient -c $numCli -i 5  -d $duration -t -l $locality -w 5 >> logs/cli5.txt &
