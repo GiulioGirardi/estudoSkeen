@@ -1,10 +1,8 @@
-#!/bin/bash
-
 ID=$1
-shift 1
-duration=$1
-shift 1
-numCli=$1
-shift 1
+echo id: $ID
+duration=$2
+echo duration: $duration
+numCli=$3
+echo numCli: $numCli
 
-java -cp "bin/*:lib/*" MainServer -i "${ID}" -d "${duration}" -c "${numCli}" >> logs/node"${ID}".txt & sleep .05
+java -cp "bin/*:lib/*" MainServer -i $ID -d $duration -c $numCli

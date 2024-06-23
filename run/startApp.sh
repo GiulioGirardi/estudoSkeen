@@ -3,13 +3,13 @@ numCli=12
 numServer=6
 duration=5
 locality=80
-rm -f -r logs  files; pkill -f 'java.Main'; ant clean; ant;
+rm -f -r logs/*  files/*; pkill -f 'java.*Main*'; ant clean; ant;
 
 #Loop chamando script para startar servidores em cada máquina
 i=0
 while [ $i -lt $numServer ]
 do
-  ssh ssh "giulio_@node$i" -f "./opt/estudoSkeen/run/runServer.sh $i $duration $numCli"
+  ssh "giulio_@node$i" -f "./opt/estudoSkeen/run/runServer.sh $i $duration $numCli"
   echo start node${i}
   i=$((i + 1))
 done
