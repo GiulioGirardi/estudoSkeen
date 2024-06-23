@@ -7,7 +7,7 @@ USERNAME="root"
 
 ((START="${numServer}"))
 for ((i=START; i>0; i-=1)) ; do
-        SCRIPT=$(sudo java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c ${numCli})
+        SCRIPT=$(sudo java -cp "bin/*:lib/*" MainServer -i "${i}" -d $duration -c ${numCli} >> logs/node"${i}".txt & sleep .05)
         sudo ssh -o StrictHostKeyChecking=no ${USERNAME} "node${i}" "${SCRIPT}"
 done
 
