@@ -9,7 +9,7 @@ rm -f -r logs/*  files/*; pkill -f 'java.*Main*'; ant clean; ant;
 i=0
 while [ $i -lt $numServer ]
 do
-  ssh "giulio_@node$i" -f "./opt/estudoSkeen/run/runServer.sh $i $duration $numCli"
+  ssh giulio_@node$i cd /opt/estudoSkeen/; ./run/runServer.sh $i $duration $numCli
   echo start node${i}
   i=$((i + 1))
 done

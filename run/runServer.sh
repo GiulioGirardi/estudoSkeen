@@ -1,3 +1,4 @@
+#!/bin/bash
 ID=$1
 echo id: $ID
 duration=$2
